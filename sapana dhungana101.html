@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Nepal - mountains, temples, wildlife and culture of the Himalayan country.">
+  <title>Discover Nepal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style100.css">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="#home" class="logo"><i class="fa-solid fa-mountain-sun"></i> Discover Nepal</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ================= PAGE 1: HOME ================= -->
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Welcome to the Land of <span>Himalayas</span></h1>
+        <p>Nepal is home to eight of the world's fourteen highest peaks, the birthplace of Lord Buddha, ancient temples, lush jungles and warm-hearted people. Start your journey with us and explore the beauty of Nepal.</p>
+        <a href="#photo-gallery" class="btn"><i class="fa-solid fa-camera"></i> View Gallery</a>
+        <a href="#contact" class="btn outline"><i class="fa-solid fa-paper-plane"></i> Plan a Trip</a>
+      </div>
+      <img class="hero-img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Everest,_Nepal,_Himalayas.jpg?width=1000" data-fallback="images/everest.svg" loading="lazy" alt="Snow-covered Mount Everest with prayer flags in the foreground">
+    </div>
+  </section>
+
+  <section class="section" id="photo-gallery">
+    <div class="container">
+      <div class="section-title">
+        <h2>Photo Gallery of Nepal</h2>
+        <p>Click any picture to enlarge it and read more about the place.</p>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="culture">Culture</button>
+        <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+      </div>
+
+      <div class="gallery">
+        <figure data-cat="nature">
+          <div class="img-wrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Everest,_Nepal,_Himalayas.jpg?width=1000" data-fallback="images/everest.svg" loading="lazy" alt="Mount Everest"></div>
+          <figcaption>
+            <span class="meta"><i class="fa-solid fa-location-dot"></i> Solukhumbu District, 8,849 m</span>
+            <h3>Mount Everest</h3>
+            <p>The highest point on Earth, known as Sagarmatha in Nepali and Chomolungma in Tibetan. The best trekking seasons are spring (March-May) and autumn (September-November).</p>
+            <span class="credit">Photo: Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons</span>
+        </figcaption>
+        </figure>
+
+        <figure data-cat="culture">
+          <div class="img-wrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Boudhanath_stupa,_Kathmandu_02.jpg?width=1000" data-fallback="images/boudhanath.svg" loading="lazy" alt="Boudhanath Stupa"></div>
+          <figcaption>
+            <span class="meta"><i class="fa-solid fa-location-dot"></i> Kathmandu, UNESCO World Heritage</span>
+            <h3>Boudhanath Stupa</h3>
+            <p>A huge white dome topped with a golden tower and the all-seeing eyes of Buddha. Colourful prayer flags carry blessings in the wind, and pilgrims walk clockwise around it.</p>
+            <span class="credit">Photo: Bernard Gagnon, CC BY-SA 4.0, via Wikimedia Commons</span>
+        </figcaption>
+        </figure>
+
+        <figure data-cat="culture">
+          <div class="img-wrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pashupatinath_Temple-1872.jpg?width=1000" data-fallback="images/pashupatinath.svg" loading="lazy" alt="Pashupatinath Temple"></div>
+          <figcaption>
+            <span class="meta"><i class="fa-solid fa-location-dot"></i> Kathmandu, Bagmati River</span>
+            <h3>Pashupatinath Temple</h3>
+            <p>A golden-roofed pagoda temple dedicated to Lord Shiva. It is one of the holiest Hindu sites and is especially crowded during the Maha Shivaratri festival.</p>
+            <span class="credit">Photo: Bijay Chaurasia, CC BY-SA 4.0, via Wikimedia Commons</span>
+        </figcaption>
+        </figure>
+
+        <figure data-cat="nature">
+          <div class="img-wrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Phewa_Lake_of_Pokhara_city.jpg?width=1000" data-fallback="images/pokhara.svg" loading="lazy" alt="Phewa Lake, Pokhara"></div>
+          <figcaption>
+            <span class="meta"><i class="fa-solid fa-location-dot"></i> Pokhara, Gandaki Province</span>
+            <h3>Phewa Lake</h3>
+            <p>The second largest lake in Nepal. Visitors enjoy boating on the calm water, and the lake is especially popular for its colourful evening views.</p>
+            <span class="credit">Photo: Iamavinashk, CC BY-SA 4.0, via Wikimedia Commons</span>
+        </figcaption>
+        </figure>
+
+        <figure data-cat="wildlife">
+          <div class="img-wrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_rhinoceros_(Rhinoceros_unicornis)_4.jpg?width=1000" data-fallback="images/chitwan.svg" loading="lazy" alt="One-horned rhinoceros in Chitwan"></div>
+          <figcaption>
+            <span class="meta"><i class="fa-solid fa-location-dot"></i> Chitwan District, Terai</span>
+            <h3>One-horned Rhinoceros</h3>
+            <p>Chitwan National Park protects the endangered greater one-horned rhino. Jeep safaris, canoe rides and bird watching are popular activities here.</p>
+            <span class="credit">Photo: Charles J Sharp, CC BY-SA 4.0, via Wikimedia Commons</span>
+        </figcaption>
+        </figure>
+
+        <figure data-cat="culture">
+          <div class="img-wrap"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kathmandu_Durbar_Square_IMG_2335_44.jpg?width=1000" data-fallback="images/kathmandu.svg" loading="lazy" alt="Kathmandu Durbar Square"></div>
+          <figcaption>
+            <span class="meta"><i class="fa-solid fa-location-dot"></i> Kathmandu Valley</span>
+            <h3>Kathmandu Durbar Square</h3>
+            <p>The old royal palace square, filled with Newar-style wooden temples and carved windows. It shows the amazing craftsmanship of the Malla kings.</p>
+            <span class="credit">Photo: Harry Paudyal, CC BY-SA 4.0, via Wikimedia Commons</span>
+        </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button aria-label="Close">&times;</button>
+    <img src="" alt="">
+    <p></p>
+  </div>
+
+  <section class="section stats">
+    <div class="container stats-grid">
+      <div class="stat"><i class="fa-solid fa-mountain"></i><h3 data-count="8">0</h3><p>of the 14 highest peaks</p></div>
+      <div class="stat"><i class="fa-solid fa-landmark"></i><h3 data-count="10">0</h3><p>UNESCO World Heritage Sites</p></div>
+      <div class="stat"><i class="fa-solid fa-language"></i><h3 data-count="120">0</h3><p>languages spoken</p></div>
+      <div class="stat"><i class="fa-solid fa-dove"></i><h3 data-count="880">0</h3><p>bird species</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pashupatinath_Temple-1872.jpg?width=1000" data-fallback="images/pashupatinath.svg" loading="lazy" alt="Pashupatinath Temple, a golden pagoda beside a river">
+      <div>
+        <h2>A Country of Culture &amp; Faith</h2>
+        <p>Nepal is a meeting point of Hindu and Buddhist traditions. Pashupatinath Temple, on the bank of the Bagmati River, is among the most sacred Shiva temples in the world and attracts devotees from across South Asia.</p>
+        <p>Festivals such as Dashain, Tihar and Holi fill the calendar with colour, music, food and family gatherings. Visitors are always welcomed with a warm "Namaste".</p>
+        <br><a href="#about" class="btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= PAGE 2: ABOUT US ================= -->
+<div id="about">
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Who we are, what we believe in and why we love Nepal.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2>Our Story</h2>
+        <p>Discover Nepal began as a student project with a simple idea: show the world the real Nepal, not only the famous peaks but also the temples, forests, lakes and people that make the country special.</p>
+        <p>We collect photos and information about Nepal's most beautiful places and present them in a clear, friendly way, so that anyone planning a visit, or just curious, can learn something new in a few minutes.</p>
+      </div>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kathmandu_Durbar_Square_IMG_2335_44.jpg?width=1000" data-fallback="images/kathmandu.svg" loading="lazy" alt="Traditional pagoda-style buildings in Kathmandu Durbar Square">
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container">
+      <div class="section-title"><h2>Our Mission &amp; Values</h2></div>
+      <div class="values">
+        <div class="value"><i class="fa-solid fa-bullseye"></i><h3>Mission</h3><p>To promote Nepal's natural and cultural heritage with accurate information and beautiful photography.</p></div>
+        <div class="value"><i class="fa-solid fa-leaf"></i><h3>Sustainability</h3><p>We encourage responsible tourism that protects mountains, wildlife and local communities.</p></div>
+        <div class="value"><i class="fa-solid fa-handshake"></i><h3>Respect</h3><p>We respect every religion, tradition and ethnic group that makes up Nepal's diversity.</p></div>
+        <div class="value"><i class="fa-solid fa-book-open"></i><h3>Learning</h3><p>Every picture comes with a short explanation, so that visitors learn as they explore.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split reverse">
+      <div class="split-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_rhinoceros_(Rhinoceros_unicornis)_4.jpg?width=1000" data-fallback="images/chitwan.svg" loading="lazy" alt="Greater one-horned rhinoceros in the jungle of Chitwan, Nepal"></div>
+      <div>
+        <h2>Why Nepal?</h2>
+        <p>Nepal is small but extremely diverse. Within a few hours you can move from tropical jungle at 60 metres above sea level to the snow-covered Himalayas above 8,000 metres. It is the birthplace of Siddhartha Gautama, the Buddha, in Lumbini.</p>
+        <p>The country has more than 120 languages and 125 ethnic groups, creating a rich mix of food, dress, music and festivals that you will not find anywhere else.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= PAGE 3: CONTACT ================= -->
+
+<div id="contact">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have a question or a suggestion? Send us a message and we will reply soon.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="info-box">
+          <h3 style="color:#0b2556;margin-bottom:22px;font-size:1.6rem;">Get in Touch</h3>
+          <div class="info-item"><i class="fa-solid fa-location-dot"></i><div><h4>Address</h4><p>Kathmandu, Nepal</p></div></div>
+          <div class="info-item"><i class="fa-solid fa-phone"></i><div><h4>Phone</h4><p>+977-1-0000000</p></div></div>
+          <div class="info-item"><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><p>info@discovernepal.example</p></div></div>
+          <div class="info-item"><i class="fa-solid fa-clock"></i><div><h4>Hours</h4><p>Sun - Fri, 9:00 AM - 5:00 PM</p></div></div>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <h3>Send a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="field"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Your name"><span class="error" id="nameErr"></span></div>
+            <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com"><span class="error" id="emailErr"></span></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea><span class="error" id="messageErr"></span></div>
+            <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <div class="form-msg" id="formMsg"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe title="Map of Kathmandu, Nepal" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=85.28%2C27.66%2C85.36%2C27.73&amp;layer=mapnik"></iframe>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <a href="#home" class="logo"><i class="fa-solid fa-mountain-sun"></i> Discover Nepal</a>
+    <div class="footer-links">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+    </div>
+    <p class="photo-credits">Photos from Wikimedia Commons - Everest: Vyacheslav Argenberg (CC BY 4.0); Boudhanath: Bernard Gagnon (CC BY-SA 4.0); Phewa Lake: Iamavinashk (CC BY-SA 4.0); Pashupatinath: Bijay Chaurasia (CC BY-SA 4.0); Chitwan: Charles J Sharp (CC BY-SA 4.0); Kathmandu: Harry Paudyal (CC BY-SA 4.0).</p>
+    <p>&copy; <span id="year">2026</span> Discover Nepal. Web Technology I - Final Project.</p>
+  </div>
+</footer>
+<button id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="script100.js"></script>
+</body>
+</html>
